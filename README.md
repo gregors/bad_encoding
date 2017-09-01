@@ -1,8 +1,6 @@
 # Bad Encoding
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/bad_encoding`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+I was having trouble finding bad characters in large strings so I did this manually for like 20 mins. Forget that! Never again!
 
 ## Installation
 
@@ -21,6 +19,7 @@ Or install it yourself as:
     $ gem install bad_encoding
 
 ## Usage
+    require 'bad_encoding'
 
     > good_string.show_bad_encoding
      => "no bad segments founds"
