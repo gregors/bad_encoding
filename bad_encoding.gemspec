@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["gregory.ostermayr@gmail.com"]
 
   spec.summary       = %q{Help find the invalid characters in bad encodings.}
-  spec.description   = %q{Helpf find the invalid characters in bad encodings.}
+  spec.description   = %q{Help find the invalid characters in bad encodings.}
   spec.homepage      = "https://github.com/gregors/bad_encoding"
   spec.license       = "MIT"
 
