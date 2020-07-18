@@ -20,12 +20,14 @@ module BadEncoding
       end_of_list = count - middle
 
       first_half = s.slice(0, middle)
-      return if check.call(first_half)
-               process(first_half, check)
-             else
-               second_half = s.slice(middle, end_of_list)
-               process(second_half, check)
-             end
+
+      if check.call(first_half)
+        process(first_half, check)
+      else
+        second_half = s.slice(middle, end_of_list)
+        process(second_half, check)
+      end
+    end
   end
 end
 
